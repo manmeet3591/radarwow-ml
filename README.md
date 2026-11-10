@@ -2,7 +2,7 @@
 
 **radar-wow stage 9: Machine-learning QPE.** Learned estimators, with physics-based stages as inputs and baselines.
 
-Part of [radar-wow](https://github.com/radar-wow), a set of repos that together build a radar QPE system that works for S, C and X band radars.
+Part of [radar-wow](https://github.com/manmeet3591/radar-wow), a set of repos that together build a radar QPE system that works for S, C and X band radars.
 Every algorithm is one class implementing one paper, with the same interface: it takes an xradar sweep or volume with canonical moment names, declares the bands and moments it needs, and records provenance.
 
 ## Sub-components
@@ -15,12 +15,13 @@ Every algorithm is one class implementing one paper, with the same interface: it
 | deep learning QPE | - | Li, Chen & Han 2023, IEEE TGRS | [doi:10.1109/TGRS.2023.3280799](https://doi.org/10.1109/TGRS.2023.3280799) | planned |
 | deep learning QPE | - | Yo et al. 2021, Earth Space Sci. | [doi:10.1029/2020EA001340](https://doi.org/10.1029/2020EA001340) | planned |
 | deep learning QPE | - | Osborne et al. 2023, AIES | [doi:10.1175/AIES-D-22-0053.1](https://doi.org/10.1175/AIES-D-22-0053.1) | planned |
-| MCB-Net, cGAN blockage | - | talk |  | to review |
+| radar + humidity fusion QPE (MCB-Net) | - | Cui et al. 2025, IEEE TGRS (talk) | [doi:10.1109/TGRS.2025.3585737](https://doi.org/10.1109/TGRS.2025.3585737) | to review |
+| cGAN beam-blockage infill | - | Tan & Chen 2023, IEEE TGRS (talk) | [doi:10.1109/TGRS.2023.3286181](https://doi.org/10.1109/TGRS.2023.3286181) | to review |
 
 ## Install
 
 ```bash
-pip install git+https://github.com/radar-wow/radarwow-core git+https://github.com/radar-wow/radarwow-ml
+pip install git+https://github.com/manmeet3591/radarwow-core git+https://github.com/manmeet3591/radarwow-ml
 ```
 
 ## Usage
