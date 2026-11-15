@@ -9,7 +9,7 @@ Every algorithm is one class implementing one paper, with the same interface: it
 
 | sub-component | algorithm | source | DOI | status |
 |---|---|---|---|---|
-| RainForest (random forest) | `RainForest` | Wolfensberger et al. 2021, AMT | [doi:10.5194/amt-14-3169-2021](https://doi.org/10.5194/amt-14-3169-2021) | planned |
+| RainForest-style correction (proof of concept, leave-one-case-out) | `RainForestQPE`, `leave_one_case_out` | Wolfensberger et al. 2021, AMT | [doi:10.5194/amt-14-3169-2021](https://doi.org/10.5194/amt-14-3169-2021) | implemented + notebook |
 | deep learning QPE | - | Chen et al. 2019, GRL | [doi:10.1029/2019GL084771](https://doi.org/10.1029/2019GL084771) | planned |
 | satellite-to-radar | - | Hilburn et al. 2021, JAMC | [doi:10.1175/JAMC-D-20-0084.1](https://doi.org/10.1175/JAMC-D-20-0084.1) | planned |
 | deep learning QPE | - | Li, Chen & Han 2023, IEEE TGRS | [doi:10.1109/TGRS.2023.3280799](https://doi.org/10.1109/TGRS.2023.3280799) | planned |
@@ -23,6 +23,14 @@ Every algorithm is one class implementing one paper, with the same interface: it
 ```bash
 pip install git+https://github.com/manmeet3591/radarwow-core git+https://github.com/manmeet3591/radarwow-ml
 ```
+
+## Notebooks (free data, S / C / X band)
+
+- [`notebooks/01_rainforest_proof_of_concept.ipynb`](notebooks/01_rainforest_proof_of_concept.ipynb): open in Colab via `https://colab.research.google.com/github/manmeet3591/radarwow-ml/blob/main/notebooks/01_rainforest_proof_of_concept.ipynb`
+
+## Results
+
+![01_rainforest](docs/figures/01_rainforest.png)
 
 ## Usage
 

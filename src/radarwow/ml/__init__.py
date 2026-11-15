@@ -1,7 +1,6 @@
-"""radar-wow stage 9: machine-learning qpe.
+"""radar-wow stage 9: machine learning (RainForest-style gauge-trained correction, proof of concept)."""
 
-Planned algorithms (see README): RainForest.
-"""
+from .forest import FEATURES, RainForestQPE, gauge_samples, leave_one_case_out
 
-PLANNED = ['RainForest']
-__all__: list[str] = []
+PLANNED = ["DL non-meteorological echo QC", "nowcasting (pysteps / DL)"]
+__all__ = ["FEATURES", "RainForestQPE", "gauge_samples", "leave_one_case_out"]
